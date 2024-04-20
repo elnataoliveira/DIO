@@ -1,1 +1,1 @@
-## python-data-analytics
+## Bootcamp Python Data Analytics - SQUADIO
