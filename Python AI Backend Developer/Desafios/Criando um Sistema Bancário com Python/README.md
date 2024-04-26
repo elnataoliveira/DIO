@@ -57,8 +57,7 @@ if __name__ == '__main__':
      gerir_conta()
 ```
 
-### - Conta model
-
+### - [Class model](https://github.com/elnataoliveira/DIO/blob/main/Python%20AI%20Backend%20Developer/Desafios/Criando%20um%20Sistema%20Banc%C3%A1rio%20com%20Python/conta.py)
 ```
 from datetime import datetime
 
