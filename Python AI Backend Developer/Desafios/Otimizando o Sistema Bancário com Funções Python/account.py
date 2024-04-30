@@ -9,8 +9,3 @@ class Account:
         self.nro = nro
         self.client = client
         self.saldo = 0
-
-
-
-
-
