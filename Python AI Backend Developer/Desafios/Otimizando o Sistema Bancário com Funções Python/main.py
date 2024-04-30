@@ -64,7 +64,8 @@ def main():
             elif option == 'c':
                 nome = input('Digite o nome: ')
                 cpf = input('Digite o cpf: ')
-                manage_account.client_register(nome, cpf)
+                endereco = input('Digite o endereco: ')
+                manage_account.client_register(nome, cpf, endereco)
             elif option == 'l':
                 manage_account.list_account()
             elif option == 'q':
