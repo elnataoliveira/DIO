@@ -31,9 +31,9 @@ class Manage_Account:
         else:
             print('Nao ha contas cadastradas')
 
-    def client_register(self, nome, cpf):
+    def client_register(self, nome, cpf, endereco):
         if not self.clients:
-            self.clients.append(Client(nome, cpf))
+            self.clients.append(Client(nome=nome, cpf=cpf, endereco=endereco))
             print('Cliente cadastrado')
         else:
             for client in self.clients:
@@ -53,19 +53,19 @@ class Manage_Account:
     def list_account(self):
         if self.accounts:
             for account in self.accounts:
-                print(account.client.nome, account.nro, account.saldo)
+                print('NOME: '+account.client.nome, 'CC: '+str(account.nro), 'SALDO R$ - '+str(account.saldo))
         else:
             print('Nao ha contas cadastradas')
 
     def deposito(self, valor, account, /):
         account.saldo += round(valor,2)
-        self.operacoes.append(account.client.nome+' - '+str(+account.nro)+' - '+datetime.now().strftime('%d-%m-%Y - %H:%M')+' - deposito - '+str(valor))
+        self.operacoes.append('NOME: '+account.client.nome+' CC:  '+str(+account.nro)+' DATA '+datetime.now().strftime('%d-%m-%Y - %H:%M')+' - deposito R$: '+str(valor))
 
     def saque(self, valor, account, /):
         account.saldo -= round(valor,2)
         account.LIMITE_SAQUE -= round(valor,2)
         account.LIMITE_DIARIO += 1
-        self.operacoes.append(account.client.nome+' - '+str(+account.nro)+' - '+datetime.now().strftime('%d-%m-%Y - %H:%M')+' - saque - '+str(valor))
+        self.operacoes.append('NOME: '+account.client.nome+' CC:  '+str(+account.nro)+' DATA '+datetime.now().strftime('%d-%m-%Y - %H:%M')+' - saque R$: '+str(valor))
 
     def extrato(self, account):
 
