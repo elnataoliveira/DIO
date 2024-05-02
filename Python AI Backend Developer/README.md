@@ -5,3 +5,5 @@
 #### - Criando um Sistema Bancário com Python
 
 #### - Otimizando o Sistema Bancário com Funções Python
+
+#### - Dominando os Fundamentos Básicos do Python
