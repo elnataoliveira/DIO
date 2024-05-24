@@ -10,3 +10,5 @@
 ### - [Modelando o Sistema Bancário em POO com Python](https://github.com/elnataoliveira/DIO/tree/main/Python%20AI%20Backend%20Developer/Desafios/Modelando%20o%20Sistema%20Banc%C3%A1rio%20em%20POO%20com%20Python)
 
 ### - [Desenvolvendo sua Primeira API com FastAPI Python e Docker]()
+
+### - [Explorando POO com Python]()
