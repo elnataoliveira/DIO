@@ -9,3 +9,5 @@
 #### - Dominando os Fundamentos Básicos do Python
 
 #### - Modelando o Sistema Bancário em POO com Python
+
+#### - Criando Uma API Com FastAPI Utilizando TDD
